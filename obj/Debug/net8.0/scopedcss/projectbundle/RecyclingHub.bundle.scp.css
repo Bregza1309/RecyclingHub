@@ -1,0 +1,622 @@
+/* _content/RecyclingHub/Components/Acquisitions.razor.rz.scp.css */
+body[b-5oapu5862a] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container[b-5oapu5862a] {
+    margin-top: 50px;
+}
+
+.search-bar[b-5oapu5862a] {
+    margin-bottom: 20px;
+}
+
+
+.modal[b-5oapu5862a] {
+    display: none;
+}
+/* _content/RecyclingHub/Components/Disposals.razor.rz.scp.css */
+body[b-1gyyf8bf22] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container[b-1gyyf8bf22] {
+    margin-top: 50px;
+}
+
+.search-bar[b-1gyyf8bf22] {
+    margin-bottom: 20px;
+}
+
+
+.modal[b-1gyyf8bf22] {
+    display: none;
+}
+/* _content/RecyclingHub/Components/Employees.razor.rz.scp.css */
+body[b-h7p8g1wr1v] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container[b-h7p8g1wr1v] {
+    margin-top: 50px;
+}
+
+.search-bar[b-h7p8g1wr1v] {
+    margin-bottom: 20px;
+}
+
+
+.modal[b-h7p8g1wr1v] {
+    display: none;
+}
+/* _content/RecyclingHub/Components/Insections.razor.rz.scp.css */
+body[b-r0iepc28rt] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container[b-r0iepc28rt] {
+    margin-top: 50px;
+}
+
+.search-bar[b-r0iepc28rt] {
+    margin-bottom: 20px;
+}
+
+
+.modal[b-r0iepc28rt] {
+    display: none;
+}
+/* _content/RecyclingHub/Components/Sales.razor.rz.scp.css */
+body[b-bed2ou2pwz] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container[b-bed2ou2pwz] {
+    margin-top: 50px;
+}
+
+.search-bar[b-bed2ou2pwz] {
+    margin-bottom: 20px;
+}
+
+
+.modal[b-bed2ou2pwz] {
+    display: none;
+}
+/* _content/RecyclingHub/Views/Account/_AccountLayout.cshtml.rz.scp.css */
+/* _content/RecyclingHub/Views/Home/AquisitionForm.cshtml.rz.scp.css */
+.container[b-772nj2ox83] {
+    margin-top: 50px;
+}
+
+.form-container[b-772nj2ox83] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-772nj2ox83]{
+    margin-left:40%;
+}
+.form-row[b-772nj2ox83] {
+    margin-bottom: 20px;
+    border-bottom:1px solid black;
+}
+
+h6[b-772nj2ox83] {
+    font-weight: bold;
+}
+
+.btn-primary[b-772nj2ox83] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-772nj2ox83] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Home/DisposalForm.cshtml.rz.scp.css */
+.container[b-iv6uwvh3fp] {
+    margin-top: 50px;
+}
+
+.form-container[b-iv6uwvh3fp] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-iv6uwvh3fp]{
+    margin-left:40%;
+}
+.form-row[b-iv6uwvh3fp] {
+    margin-bottom: 20px;
+    border-bottom:1px solid black;
+}
+
+h6[b-iv6uwvh3fp] {
+    font-weight: bold;
+}
+
+.btn-primary[b-iv6uwvh3fp] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-iv6uwvh3fp] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Home/Editor.cshtml.rz.scp.css */
+.container[b-06xziguoxw] {
+    margin-top: 50px;
+}
+
+.form-container[b-06xziguoxw] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-06xziguoxw]{
+    margin-left:40%;
+}
+.form-row[b-06xziguoxw] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-06xziguoxw] {
+    font-weight: bold;
+}
+
+.btn-primary[b-06xziguoxw] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-06xziguoxw] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Home/EmployeeForm.cshtml.rz.scp.css */
+.container[b-v48ps2r64z] {
+    margin-top: 50px;
+}
+
+.form-container[b-v48ps2r64z] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-v48ps2r64z]{
+    margin-left:40%;
+}
+.form-row[b-v48ps2r64z] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-v48ps2r64z] {
+    font-weight: bold;
+}
+
+.btn-primary[b-v48ps2r64z] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-v48ps2r64z] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Home/InsectionForm.cshtml.rz.scp.css */
+.container[b-fbwlqxl4tb] {
+    margin-top: 50px;
+}
+
+.form-container[b-fbwlqxl4tb] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-fbwlqxl4tb]{
+    margin-left:40%;
+}
+.form-row[b-fbwlqxl4tb] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-fbwlqxl4tb] {
+    font-weight: bold;
+}
+
+.btn-primary[b-fbwlqxl4tb] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-fbwlqxl4tb] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Home/SaleForm.cshtml.rz.scp.css */
+.container[b-j39hxlib4s] {
+    margin-top: 50px;
+}
+
+.form-container[b-j39hxlib4s] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-j39hxlib4s]{
+    margin-left:40%;
+}
+.form-row[b-j39hxlib4s] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-j39hxlib4s] {
+    font-weight: bold;
+}
+
+.btn-primary[b-j39hxlib4s] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-j39hxlib4s] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+/* _content/RecyclingHub/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-ud4apbmj8u] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.btn-floating[b-ud4apbmj8u] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures the button stays on top of other content */
+}
+
+.nav-link .active[b-ud4apbmj8u]{
+    background-color:lightseagreen;
+}
+.nav-pills .nav-link.active[b-ud4apbmj8u], .nav-pills .show > .nav-link[b-ud4apbmj8u] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ud4apbmj8u] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ud4apbmj8u] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ud4apbmj8u] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ud4apbmj8u] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ud4apbmj8u] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+.wrapper[b-ud4apbmj8u] {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* _content/RecyclingHub/Views/Shared/_NavPartial.cshtml.rz.scp.css */
+
+
+a[b-8x2fgo5qiw] {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #3445b4;
+}
+
+    a:hover[b-8x2fgo5qiw], a:focus[b-8x2fgo5qiw] {
+        text-decoration: none !important;
+        outline: none !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+button[b-8x2fgo5qiw] {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+    button:hover[b-8x2fgo5qiw], button:focus[b-8x2fgo5qiw] {
+        text-decoration: none !important;
+        outline: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+h1[b-8x2fgo5qiw], h2[b-8x2fgo5qiw], h3[b-8x2fgo5qiw], h4[b-8x2fgo5qiw], h5[b-8x2fgo5qiw],
+.h1[b-8x2fgo5qiw], .h2[b-8x2fgo5qiw], .h3[b-8x2fgo5qiw], .h4[b-8x2fgo5qiw], .h5[b-8x2fgo5qiw] {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #000;
+}
+
+.ftco-section[b-8x2fgo5qiw] {
+    padding: 7em 0;
+}
+
+.ftco-no-pt[b-8x2fgo5qiw] {
+    padding-top: 0;
+}
+
+.ftco-no-pb[b-8x2fgo5qiw] {
+    padding-bottom: 0;
+}
+
+.heading-section[b-8x2fgo5qiw] {
+    font-size: 28px;
+    color: #000;
+}
+
+    .heading-section small[b-8x2fgo5qiw] {
+        font-size: 18px;
+    }
+
+.lead[b-8x2fgo5qiw]{
+    margin-left:15%;
+}
+
+
+#sidebar[b-8x2fgo5qiw] {
+    min-width: 270px;
+    max-width: 270px;
+    background: #075e54;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+
+    #sidebar .h6[b-8x2fgo5qiw] {
+        color: #fff;
+    }
+
+    #sidebar.active[b-8x2fgo5qiw] {
+        margin-left: -270px;
+    }
+
+    #sidebar h1[b-8x2fgo5qiw] {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+        #sidebar h1 .logo[b-8x2fgo5qiw] {
+            color: #fff;
+        }
+
+            #sidebar h1 .logo span[b-8x2fgo5qiw] {
+                font-size: 14px;
+                color: #44bef1;
+                display: block;
+            }
+
+    #sidebar ul.components[b-8x2fgo5qiw] {
+        padding: 0;
+    }
+
+    #sidebar ul li[b-8x2fgo5qiw] {
+        font-size: 16px;
+    }
+
+        #sidebar ul li > ul[b-8x2fgo5qiw] {
+            margin-left: 10px;
+        }
+
+            #sidebar ul li > ul li[b-8x2fgo5qiw] {
+                font-size: 14px;
+            }
+
+        #sidebar ul li a[b-8x2fgo5qiw] {
+            padding: 10px 0;
+            display: block;
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+            #sidebar ul li a i[b-8x2fgo5qiw] {
+                color: white;
+            }
+
+            #sidebar ul li a:hover[b-8x2fgo5qiw] {
+                color: #fff;
+            }
+
+        #sidebar ul li.active > a[b-8x2fgo5qiw] {
+            background: transparent;
+            color: #fff;
+        }
+
+@media (max-width: 991.98px) {
+    #sidebar[b-8x2fgo5qiw] {
+        margin-left: -270px;
+    }
+
+        #sidebar.active[b-8x2fgo5qiw] {
+            margin-left: 0;
+        }
+}
+
+#sidebar .custom-menu[b-8x2fgo5qiw] {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar .custom-menu[b-8x2fgo5qiw] {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+#sidebar .custom-menu .btn[b-8x2fgo5qiw] {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+    #sidebar .custom-menu .btn i[b-8x2fgo5qiw] {
+        margin-right: -40px;
+        font-size: 14px;
+    }
+
+    #sidebar .custom-menu .btn.btn-primary[b-8x2fgo5qiw] {
+        background: transparent;
+        border-color: transparent;
+    }
+
+        #sidebar .custom-menu .btn.btn-primary[b-8x2fgo5qiw]:after {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background: #075e54;
+            border-radius: 10px;
+        }
+
+        #sidebar .custom-menu .btn.btn-primary:hover[b-8x2fgo5qiw], #sidebar .custom-menu .btn.btn-primary:focus[b-8x2fgo5qiw] {
+            background: transparent !important;
+            border-color: transparent !important;
+        }
+
+a[data-toggle="collapse"][b-8x2fgo5qiw] {
+    position: relative;
+}
+
+.dropdown-toggle[b-8x2fgo5qiw]::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+    #sidebarCollapse span[b-8x2fgo5qiw] {
+        display: none;
+    }
+}
+
+
+
+.btn.btn-primary[b-8x2fgo5qiw] {
+    background: #075e54;
+    border-color: #075e54;
+}
+
+    .btn.btn-primary:hover[b-8x2fgo5qiw], .btn.btn-primary:focus[b-8x2fgo5qiw] {
+        background: #128c7e !important;
+        border-color: #075e54 !important;
+    }
+
+.footer p[b-8x2fgo5qiw] {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control[b-8x2fgo5qiw] {
+    height: 40px !important;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    border-radius: 4px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: transparent;
+}
+
+    .form-control:focus[b-8x2fgo5qiw], .form-control:active[b-8x2fgo5qiw] {
+        border-color: #000;
+    }
+
+    .form-control[b-8x2fgo5qiw]::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-control[b-8x2fgo5qiw]::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-control:-ms-input-placeholder[b-8x2fgo5qiw] {
+        /* IE 10+ */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-control:-moz-placeholder[b-8x2fgo5qiw] {
+        /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.subscribe-form .form-control[b-8x2fgo5qiw] {
+    background: #3b4ec6;
+}
+.components[b-8x2fgo5qiw]{
+    margin-top:10%;
+}
+.nav-link:hover[b-8x2fgo5qiw] {
+    background-color:lightblue;
+}
+#logo[b-8x2fgo5qiw]{
+    margin-left:20%;
+}

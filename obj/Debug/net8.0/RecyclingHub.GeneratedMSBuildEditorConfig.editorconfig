@@ -1,0 +1,135 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RecyclingHub
+build_property.RootNamespace = RecyclingHub
+build_property.ProjectDir = C:\Users\Brend\source\repos\RecyclingHub\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Brend\source\repos\RecyclingHub
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Acquisitions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY3F1aXNpdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5oapu5862a
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Disposals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaXNwb3NhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1gyyf8bf22
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Employees.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFbXBsb3llZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-h7p8g1wr1v
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Insections.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnNlY3Rpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-r0iepc28rt
+
+[C:/Users/Brend/source/repos/RecyclingHub/Components/Sales.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTYWxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bed2ou2pwz
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Aquisitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcXVpc2l0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Disposals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwb3NhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Employees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Insections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnNlY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/ProductEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Sales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Account/_AccountLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfQWNjb3VudExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-dpeah4ydpx
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/AquisitionForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcXVpc2l0aW9uRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-772nj2ox83
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/DisposalForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwb3NhbEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-iv6uwvh3fp
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-06xziguoxw
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/EmployeeForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZUZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v48ps2r64z
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/InsectionForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnNlY3Rpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-fbwlqxl4tb
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Home/SaleForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-j39hxlib4s
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ud4apbmj8u
+
+[C:/Users/Brend/source/repos/RecyclingHub/Views/Shared/_NavPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-8x2fgo5qiw

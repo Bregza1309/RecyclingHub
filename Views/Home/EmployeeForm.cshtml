@@ -1,0 +1,38 @@
+﻿@model EmployeeViewModel
+@inject IdentityService IdentityService
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="form-container">
+                <h6 class="text-center mb-4 display-6">New Employee</h6>
+                <form id="contactForm" asp-action="EmployeeForm" asp-controller="Home" method="post" class="text-center">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    
+                    <input type="hidden" asp-for="CompanyName" value="@IdentityService.GetCompanyNameAsync(User.Identity!.Name!)"/>
+                    <div class="form-row justify-content-center text-center">
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Username</label>
+                            <input asp-for="Username" class="form-control text-center" id="customerName">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-6 text-center">
+                            <label for="amount">Password</label>
+                            <input  class="form-control text-center" id="amount" asp-for="Password" type="password" >
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-6 text-center">
+                            <label for="amount">ConfirmPassword</label>
+                            <input  class="form-control text-center" id="amount" asp-for="ConfirmPassword" type="password" >
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-success" id="sub">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

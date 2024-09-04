@@ -1,0 +1,11 @@
+﻿@inject IdentityService IdentityService
+<style>    
+.btn-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000; /* Ensures the button stays on top of other content */
+    }
+</style>
+<a asp-action="EmployeeForm" asp-controller="Home" class="btn btn-lg btn-secondary text-white text-center rounded-circle btn-floating">+</a>
+<component type="typeof(Employees)" render-mode="ServerPrerendered" param-AdminName="@User.Identity!.Name" param-CompanyName="@(IdentityService.GetCompanyNameAsync(User!.Identity!.Name))"/>

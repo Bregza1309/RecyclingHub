@@ -1,0 +1,48 @@
+﻿@inject IdentityService IdentityServices
+@model Insection
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+@{
+    double total = ViewBag.salesTotal;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="form-container">
+                <h6 class="text-center mb-4 display-6">Insection Form</h6>
+                <form id="contactForm" asp-action="InsectionForm" asp-controller="Home" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input type="hidden" asp-for="CompanyName" value="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)" />
+                    <input type="hidden" asp-for="Id" value="0"/>
+                    <div class="form-row text-center">
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Name</label>
+                            <input asp-for="Name" class="form-control text-center" id="customerName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Amount(R)</label>
+                            <input  class="form-control text-center" asp-for="Amount" id="weight" required>
+                        </div>
+                    </div>
+                    <div class="form-row text-center">
+                        <div class="form-group col-md-6">
+                            <label for="amount">Expenses Amount(R)</label>
+                            <input  class="form-control text-center" id="amount" asp-for="ExpensesAmount" value="0" >
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Expenses Description</label>
+                            <textarea class="form-control text-center" asp-for="ExpensesDescription" id="weight" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-6 text-center">
+                            <label for="amount">Sales Total(R)</label>
+                            <input type="hidden" asp-for="SalesTotal" value="@total"/>
+                            <input class="form-control text-center" id="amount" value="@(total.ToString("C"))"  disabled>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success" id="sub">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

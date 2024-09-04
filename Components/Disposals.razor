@@ -1,0 +1,129 @@
+﻿@inject IHubServices<Disposal> SaleService
+<div class="container bg-light rounded bg-opacity-75">
+    <h1 class="text-center mb-4">Disposal Register</h1>
+    <div class="input-group mb-3 search-bar">
+        <input @bind="key" @oninput="SearchSale" type="text" class="form-control" id="searchInput" placeholder="Search name or date">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-light table-bordered">
+            <thead class="table-header">
+                <tr>
+                    <th>
+                        Disposed To<br /><br/>
+                        <ol>
+                            <li>
+                                FullName
+                            </li>
+                            <li>
+                                ID Number
+                            </li>
+                            <li>
+                                Manner of Verifivation
+                            </li>
+                            <li>
+                                Telephone Numbers
+                            </li>
+                            <li>
+                                Contact Address
+                            </li>
+                        </ol>
+                    </th>
+                    <th>
+                        Person Conducting Transaction on behalf of dealer<br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </th>
+                    <th>
+                        Date and Time of Transaction<br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </th>
+                    <th>
+                        Manner of Disposals <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="salesTable">
+                <!-- Table rows will be dynamically added here -->
+                @if(TempList.Count == 0)
+                {
+                    <tr>
+                        <td class="text-center" colspan="4">
+                            No Results
+                        </td>
+                    </tr>
+                    
+                }
+                else
+                {
+                    foreach(var sale in TempList)
+                    {
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li>@sale.FullName</li>
+                                    <li>@sale.IdNumber</li>
+                                    <li>@sale.MannerOfVerification</li>
+                                    <li>@sale.TelephoneNumbers</li>
+                                    <li>@sale.ContactAddress</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li> <b>FullName</b> : @sale.IntermediaryFullName</li>
+                                    <li><b>Signature</b> :@sale.IntermediarySignature</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li><b>Date :</b>@sale.DateTime.ToShortDateString()</li>
+                                    <li><b>Time :</b>@sale.DateTime.ToShortTimeString()</li>
+                                </ol>
+                            </td>
+                            <td>
+                                @(sale.MannerOfDisposal)
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string CompanyName { get; set; } = string.Empty;
+    List<Disposal> OriginalList { get; set; } = new ();
+    List<Disposal> TempList { get; set; } = new();
+
+    string key = string.Empty; 
+    protected async override Task OnParametersSetAsync()
+    {
+        OriginalList = await SaleService.GetAsync(CompanyName);
+        TempList = OriginalList;
+    }
+    private void SearchSale(ChangeEventArgs e)
+    {
+        key = e.Value!.ToString() ?? string.Empty;
+        Regex rx = new(@$"{key.ToLower()}");
+        TempList = OriginalList.Where(s => 
+                                rx.IsMatch(s.FullName.ToLower()) ||
+                                rx.IsMatch(s.DateTime.ToShortDateString()) 
+            ).ToList();
+    }
+}

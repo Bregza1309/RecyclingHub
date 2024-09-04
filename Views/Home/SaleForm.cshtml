@@ -1,0 +1,65 @@
+﻿@inject IdentityService IdentityServices
+@model Sale
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+@{
+    string amt = ViewBag.Amount != null ? $"{ViewBag.Amount}" : "0";
+    string mas = ViewBag.Mass ?? "0";
+    string gros = ViewBag.Gross ?? "0";
+    string tar = ViewBag.Tare ?? "0"; 
+    mas = mas.Replace(".",",");
+    gros = gros.Replace(".",",");
+    tar = tar.Replace(".",",");
+    //convert to floating point from string
+    float mass = float.Parse(mas);
+    float gross = float.Parse(gros);
+    float tare = float.Parse(tar);
+    float amount = float.Parse(amt.Replace(".",","));
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="form-container">
+                <h6 class="text-center mb-4 display-6">Purchase Form</h6>
+                <h5 class="lead text-center">Material : @ViewBag.productName</h5>
+
+                <form id="contactForm" asp-action="SaleForm" asp-controller="Home" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input type="hidden" asp-for="CompanyName" value="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)" />
+                    <input type="hidden" asp-for="ProductName" value="@ViewBag.productName"/>
+                    <input type="hidden" asp-for="Id" value="0"/>
+                    <input type="hidden" asp-for="PricePerKg" value="@ViewBag.price"/>
+                    <div class="form-row text-center">
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Customer Name</label>
+                            <input asp-for="CustomerName" class="form-control text-center" id="customerName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Gross Weight In Kgs</label>
+                            <input asp-for="GrossWeight" type="hidden" value="@gross"/>
+                            <input  class="form-control text-center" value="@gross" id="weight" disabled>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Tare In Kgs</label>
+                            <input asp-for="TareWeight" type="hidden" value="@tare" />
+                            <input class="form-control text-center" value="@tare" id="weight" disabled>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Net Weight In Kgs</label>
+                            <input asp-for="WeightInKgs" type="hidden" value="@mass"/>
+                            <input  class="form-control text-center" value="@mass" id="weight" disabled>
+                        </div>
+                        
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-6 text-center">
+                            <label for="amount">Cash Amount(R)</label>
+                            <input asp-for="CashAmount" class="form-control text-center" id="amount" value="@amount">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success" id="sub">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

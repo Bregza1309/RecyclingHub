@@ -1,0 +1,48 @@
+﻿@inject IdentityService IdentityServices
+<nav id="sidebar" >
+	<div class="custom-menu">
+		<button type="button" id="sidebarCollapse" class="btn btn-primary">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle Menu</span>
+		</button>
+	</div>
+	
+	<div class="p-4">
+		<div id="logo">
+			<img src="~/Images/Favicon/android-chrome-192x192.png" width="80" height="80"  />
+		</div>
+		<h6 class="lead">User: @User.Identity!.Name</h6>
+		<ul class="list-unstyled components mb-5">
+			<li class="nav-item">
+				<a asp-action="Index" asp-controller="Home" class="@(ViewBag.page == "Products" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="eos-icons:products-outlined"></span> Products</a>
+			</li>
+			<li class="nav-item">
+				<a asp-action="Sales" asp-controller="Home" class="@(ViewBag.page == "Sales" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="carbon:sales-ops"></span> Purchases</a>
+			</li>
+			<li class="nav-item">
+				<a asp-action="Insections" asp-controller="Home" class="@(ViewBag.page == "Insections" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="game-icons:pay-money"></span> Insections</a>
+			</li>
+			<li class="nav-item">
+				<a asp-action="Aquisitions" asp-controller="Home" class="@(ViewBag.page == "Acquisitions" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="fa-brands:acquisitions-incorporated"></span> Acquisitions</a>
+			</li>
+			<li class="nav-item">
+				<a asp-action="Disposals" asp-controller="Home" class="@(ViewBag.page == "Disposals" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="game-icons:sell-card"></span> Disposals</a>
+			</li>
+			@if(IdentityServices.GetRoleByName(User.Identity!.Name!) == "Admin")
+			{
+				<li class="nav-item">
+					<a asp-action="Employees" asp-controller="Home" class="@(ViewBag.page == "Employees" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="fa6-solid:people-line"></span> Employees</a>
+				</li>
+			}
+			<li class="nav-item">
+				<a asp-action="Editor" asp-route-Id="@IdentityServices.GetIdbyName(User.Identity!.Name!)" asp-controller="Home" class="@(ViewBag.page == "Profile" ? "bg-success" : string.Empty) nav-link text-light rounded"><span class="iconify" data-icon="ri:user-settings-fill"></span> Profile</a>
+			</li>
+		</ul>
+		<div class="footer">
+			<div class="nav-item">
+				<a asp-action="Logout" asp-controller="Account" class ="nav-link text-light rounded"><span class="iconify" data-icon="solar:logout-2-bold"></span> Logout</a>
+			</div>
+		</div>
+
+	</div>
+</nav>

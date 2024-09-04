@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RecyclingHub.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RecyclingHub.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\Images\\Favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Products\\42b241f5-fb55-4ca8-b5e1-37c4bbfe7988-1020x612.webp",
+      "PackagePath": "staticwebassets\\Images\\Products\\42b241f5-fb55-4ca8-b5e1-37c4bbfe7988-1020x612.webp"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Products\\Copper-Plant-Mineral.webp",
+      "PackagePath": "staticwebassets\\Images\\Products\\Copper-Plant-Mineral.webp"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Products\\WhatsApp Image 2023-12-18 at 07.39.22.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Products\\WhatsApp Image 2023-12-18 at 07.39.22.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Products\\WhatsApp Image 2024-06-03 at 13.38.58.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Products\\WhatsApp Image 2024-06-03 at 13.38.58.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\Images\\Products\\brass-scrap.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\brass-scrap.png"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\css\\productEditor.css",
+      "PackagePath": "staticwebassets\\css\\productEditor.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\js\\nav.js",
+      "PackagePath": "staticwebassets\\js\\nav.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.without-api.d.ts",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.without-api.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\iconify\\iconify.without-api.min.js",
+      "PackagePath": "staticwebassets\\lib\\iconify\\iconify.without-api.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Brend\\source\\repos\\RecyclingHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecyclingHub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RecyclingHub.props",
+      "PackagePath": "build\\RecyclingHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RecyclingHub.props",
+      "PackagePath": "buildMultiTargeting\\RecyclingHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RecyclingHub.props",
+      "PackagePath": "buildTransitive\\RecyclingHub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,100 @@
+﻿@inject IHubServices<Sale> SaleService
+@inject INotyfService NotyfService
+<div class="container bg-light rounded bg-opacity-75">
+    <h1 class="text-center mb-4">Item Purchases</h1>
+    <div class="input-group mb-3 search-bar">
+        <input @bind="key" @oninput="SearchSale" type="text" class="form-control" id="searchInput" placeholder="Search products or dates">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-success">
+            <thead class="table-header">
+                <tr>
+                    <th>Date</th>
+                    <th>Product</th>
+                    <th>Price/kg</th>
+                    <th>Gross(kgs)</th>
+                    <th>Tare(kgs)</th>
+                    <th>Net(kgs)</th>
+                    <th>Cost</th>
+                    @if(Role == "Admin")
+                    {
+                        <th>Delete</th>
+                    }
+                    
+                </tr>
+            </thead>
+            <tbody id="salesTable">
+                <!-- Table rows will be dynamically added here -->
+                @if(TempList.Count == 0)
+                {
+                    <tr>
+                        <td class="text-center" colspan="8">
+                            No Results
+                        </td>
+                    </tr>
+                    
+                }
+                else
+                {
+                    foreach(var sale in TempList)
+                    {
+                        <tr>
+                            <td>@sale.Date.ToShortDateString()</td>
+                            <td>@sale.ProductName</td>
+                            <td>R@(sale.PricePerKg)</td>
+                            <td>@(sale.GrossWeight)</td>
+                            <td>@(sale.TareWeight)</td>
+                            <td>@(sale.WeightInKgs)</td>
+                            <td>@sale.CashAmount.ToString("C")</td>
+                            @if (Role == "Admin")
+                            {
+                                <td><button class="btn btn-danger btn-sm" @onclick="@(e => Delete(e,sale.Id))"><span class="iconify" data-icon="ic:round-delete"></span></button></td>
+                            }
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total For Items Bought</td>
+                    <td colspan="2">@TempList.Sum(s => s.CashAmount).ToString("C")</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string CompanyName { get; set; } = string.Empty;
+    [Parameter]
+    public string Role { get; set; } = string.Empty;
+    List<Sale> OriginalList { get; set; } = new List<Sale>();
+    List<Sale> TempList { get; set; } = new List<Sale>();
+
+    string key = string.Empty; 
+    protected async override Task OnParametersSetAsync()
+    {
+        OriginalList = await SaleService.GetAsync(CompanyName);
+        TempList = OriginalList;
+        
+    }
+    private void SearchSale(ChangeEventArgs e)
+    {
+        key = e.Value!.ToString() ?? string.Empty;
+        Regex rx = new(@$"{key.ToLower()}");
+        TempList = OriginalList.Where(s => rx.IsMatch(s.ProductName.ToLower()) ||
+                                rx.IsMatch(s.CustomerName.ToLower()) ||
+                                rx.IsMatch(s.Date.ToShortDateString()) 
+            ).ToList();
+    }
+    private async Task Delete(EventArgs e , int Id)
+    {
+        var sale = await SaleService.GetAsync(Id);
+        TempList.Remove(sale);
+        OriginalList.Remove(sale);
+        await SaleService.RemoveAsync(Id);
+        NotyfService.Error("Record Deleted");
+
+    }
+}

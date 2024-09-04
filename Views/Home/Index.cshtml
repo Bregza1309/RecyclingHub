@@ -1,0 +1,14 @@
+﻿@inject IdentityService IdentityServices;
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .btn-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000; /* Ensures the button stays on top of other content */
+    }
+</style>
+<a asp-action="ProductEditor" asp-controller="Home" class="btn btn-lg btn-dark text-white text-center rounded-circle btn-floating">+</a>
+<component type="typeof(Products)" render-mode="ServerPrerendered" param-Role="@(IdentityServices.GetRoleByName(User.Identity!.Name!))" param-CompanyName="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)" />

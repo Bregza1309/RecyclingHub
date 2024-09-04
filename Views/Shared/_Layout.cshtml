@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecyclingHub</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Images/Favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="~/RecyclingHub.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <partial name="_NavPartial" />
+        <div id="content" class="p-md-5 pt-5">
+            @RenderBody()
+        </div>
+    </div>
+
+    <base href="~/" />
+    <component type="typeof(Microsoft.AspNetCore.Components.Web.HeadOutlet)"
+               render-mode="ServerPrerendered" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/nav.js" asp-append-version="true"></script>
+    <script src="~/lib/iconify/iconify.min.js"></script>
+    <script src="_framework/blazor.web.js"></script>
+    @await Component.InvokeAsync("Notyf")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

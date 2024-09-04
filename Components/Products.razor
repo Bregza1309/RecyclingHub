@@ -1,0 +1,102 @@
+﻿@inject IHubServices<Product> ProductService
+<!-- Search Section -->
+<section id="search" class="search-section">
+    <div class="container text-center">
+        <h2 class="mb-4">Search Products</h2>
+        <div class="input-group mb-3">
+            <InputText @bind-Value="key" @oninput="HandleSearch" class="form-control" placeholder="type product name ..." aria-label="Search" aria-describedby="button-search"/>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products-section">
+    <div class="container bg-light rounded bg-opacity-75">
+        <h2 class="mb-4 text-center">Recycling Materials</h2>
+        <div class="row">
+            <!-- Products-->
+            @if(products != null)
+            {
+                @if (products.Count > 0)
+                {
+                    @foreach (int i in Enumerable.Range(0, products!.Count()))
+                    {
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/Images/Products/@products![i].Image" class="card-img-top" alt="@products![i].Name">
+                                <div class="card-body">
+                                    @if (Role == "Admin")
+                                    {
+                                        <a href="/home/productEditor/@products[i].Id" style="text-decoration:none"><h5 class="card-title">@products![i].Name</h5></a>
+                                    }
+                                    else
+                                    {
+                                        <h5 class="card-title">@products![i].Name</h5>
+                                    }
+
+
+                                    <input type="hidden" value="@(products![i].Price)" id="price-@i" />
+                                    <input type="hidden" value="0" id="cashAmount-@i" />
+                                    <input type="hidden" value="0" id="net-@i" />
+                                    <p class="card-text">Price per Kg : R@(products![i].Price)</p>
+                                    <button class="btn btn-primary" onclick="toggleCalculateSection(@i)">Calculate Price</button>
+                                    <button class="btn btn-success" onclick="Navigate(@products[i].Id,@i)">Buy</button>
+                                    <div class="calculate-section" id="calculate-section-@i">
+                                        <div class="form-row">
+                                            <div class="form-group ">
+                                                <input type="number" id="weight-@i" placeholder="Enter Gross mass in kgs" class="form-control">
+                                                
+                                            </div><br />
+                                            <div class="form-group ">
+                                                
+                                                <input type="number" id="tare-@i" placeholder="Enter Tare in kgs" class="form-control">
+                                            </div>
+                                        </div>
+                                        
+
+                                        
+                                        <button class="btn btn-details" onclick="calculatePrice(@i)">Calculate</button>
+                                        <p id="result-@i"></p>
+                                        <p id="netresult-@i"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="bg-light rounded bg-opacity-75 text-center">
+                        <h6 class="text-danger">Product List is Empty</h6>
+                    </div>
+                }
+            }
+            
+            
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter]
+    public string CompanyName { get; set; } = string.Empty;
+    [Parameter]
+    public string Role { get; set; } = string.Empty;
+    List<Product>? products { get; set; }
+    List<Product> tmpProducts { get; set; } = new List<Product>();
+
+    string key { get; set; } = string.Empty;
+
+    protected async override Task OnParametersSetAsync()
+    {
+        products = await ProductService.GetAsync(CompanyName);
+        tmpProducts = products;
+    }
+    void HandleSearch(ChangeEventArgs e)
+    {
+        key = e.Value!.ToString() ?? string.Empty;
+        Regex rx = new Regex(@$"{key.ToLower()}");
+        products = tmpProducts.Where(p => rx.IsMatch(p.Name.ToLower())).ToList();
+
+    }
+}

@@ -1,0 +1,104 @@
+﻿@inject IdentityService IdentityServices
+<link rel="stylesheet" href="~/css/productEditor.css">
+@model Product
+<!-- Confirmation Modal -->
+<div id="confirmationModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Delete</h5>
+                
+            </div>
+            <div class="modal-body">
+                Are you sure you want to Delete the Product?
+            </div>
+            <div class="modal-footer">
+                <button id="confirmYes" type="button" class="btn btn-danger">Yes</button>
+                <button type="button" id="confirmNo" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="form-container">
+        <h2>@ViewBag.mode Product</h2>
+        <div class="image-preview" id="imagePreview">
+            @if(ViewBag.mode == "Edit")
+            {
+                <img src="~/Images/Products/@Model.Image" id="imageDiv" alt="productImage" class="img-fluid"/>
+                <input type="hidden" value="@Model.Id" id="Id" />
+            }
+            else
+            {
+                <img src="" id="imageDiv" alt="productImage" />
+            }
+        </div>
+        <form asp-action="ProductEditor" asp-controller="Home" method="post" enctype="multipart/form-data" class="text-center">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" value="@ViewBag.mode" name="mode"/>
+            <input type="hidden" asp-for="CompanyName" value="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)"/>
+            <div class="form-group text-center">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" asp-for="Name" class="text-center" required>
+            </div>
+            <div class="form-group text-center">
+                <label for="productPrice">Price</label>
+                <input type="text" id="productPrice" asp-for="Price" class="text-center" required>
+            </div>
+            <div class="form-group text-center">
+                <label for="productImage">Product Image</label>
+                @if(ViewBag.mode == "Edit")
+                {
+                    <input asp-for="Image" type="hidden" value="@Model.Image"/>
+                    <input type="file" id="productImage" name="productImage" accept="image/*" onchange="previewImage(event)">
+                }
+                else
+                {
+                    <input type="file" id="productImage" name="productImage" accept="image/*" onchange="previewImage(event)" required>
+                }
+
+            </div>
+            <div class="justify-content-center align-content-center">
+                <button class="btn btn btn-success" type="submit">@ViewBag.mode</button>
+                @if(ViewBag.mode == "Edit")
+                {
+                    <button type="button" id="confirmButton" class="btn btn-danger">Delete</button>
+                }
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function previewImage(event) {
+        const preview = document.getElementById('imagePreview');
+        const imageDiv = document.getElementById('imageDiv');
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onloadend = () => {
+            imageDiv.src = reader.result;
+            
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.innerHTML = '';
+        }
+    }
+    document.getElementById('confirmButton').addEventListener('click', function () {
+        $('#confirmationModal').modal('show');
+        console.log("Id : " + $(`#Id`).val());
+    });
+
+    document.getElementById('confirmYes').addEventListener('click', function () {
+        // Your confirmation action here
+        
+        window.location.href = "/home/DeleteProduct/" + $(`#Id`).val();
+    });
+    document.getElementById('confirmNo').addEventListener('click', () => {
+        $('#confirmationModal').modal('hide');
+    })
+</script>

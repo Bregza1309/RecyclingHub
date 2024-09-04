@@ -1,0 +1,30 @@
+.container[b-v48ps2r64z] {
+    margin-top: 50px;
+}
+
+.form-container[b-v48ps2r64z] {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sub[b-v48ps2r64z]{
+    margin-left:40%;
+}
+.form-row[b-v48ps2r64z] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-v48ps2r64z] {
+    font-weight: bold;
+}
+
+.btn-primary[b-v48ps2r64z] {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+    .btn-primary:hover[b-v48ps2r64z] {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }

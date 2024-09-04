@@ -1,0 +1,2 @@
+﻿@inject IdentityService IdentityServices
+<component type="typeof(Sales)" render-mode="ServerPrerendered" param-Role="@IdentityServices.GetRoleByName(User.Identity!.Name!)" param-CompanyName="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)" />

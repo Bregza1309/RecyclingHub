@@ -1,0 +1,76 @@
+﻿@inject IdentityService IdentityServices
+@model Aquisition
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+@{
+    
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="form-container">
+                <h2 class="text-center mb-4 display-3">Acquisition Form</h2>
+                <form id="contactForm" asp-action="AquisitionForm" asp-controller="Home" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input type="hidden" asp-for="CompanyName" value="@IdentityServices.GetCompanyNameAsync(User.Identity!.Name!)" />
+                    <div class="form-row text-center justify-content-center">
+                        <h6 class="text-center lead">Full Description and Weight of Goods</h6>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Description</label>
+                            <textarea class="form-control text-center" asp-for="Description" id="weight" required></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Weight</label>
+                            <input asp-for="Weight" class="form-control text-center" id="customerName" required>
+                        </div>
+                    </div>
+                    <h6 class="text-center lead">Acquired From</h6>
+                    <div class="form-row text-center">
+                        <div class="form-group col-md-6">
+                            <label for="customerName">FullName</label>
+                            <input asp-for="FullName" class="form-control text-center" id="customerName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">ID Number</label>
+                            <input  class="form-control text-center" asp-for="IdNumber" id="weight" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Manner of Verification</label>
+                            <input class="form-control text-center" asp-for="MannerOfVerification" id="weight" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Telephone Numbers</label>
+                            <textarea class="form-control text-center" asp-for="TelephoneNumbers" id="weight" required></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Vehicle Registration</label>
+                            <input class="form-control text-center" asp-for="VehicleRegistration" id="weight" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="weight">Contact Address</label>
+                            <textarea class="form-control text-center" asp-for="ContactAddress" id="weight" required></textarea>
+                        </div>
+                    </div>
+                    <h6 class="text-center lead">Person Conducting Transaction</h6>
+                    <div class="form-row text-center">
+                        <div class="form-group col-md-6">
+                            <label for="amount">FullName</label>
+                            <input  class="form-control text-center" id="amount" asp-for="IntermediaryFullName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="amount">Signature</label>
+                            <input class="form-control text-center" id="amount" asp-for="IntermediarySignature" required>
+                        </div>
+                    </div>
+                    <h6 class="text-center lead">Purchase Price</h6>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-6 text-center">
+                            <label for="amount">Cash Amount(R)</label>
+                            <input class="form-control text-center" id="amount" asp-for="PurchasePrice" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success" id="sub">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
